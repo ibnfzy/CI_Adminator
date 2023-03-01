@@ -10,10 +10,9 @@
       <div class="masonry-item col-md-6">
         <div class="bgc-white p-20 bd">
           <h6 class="c-grey-900">Basic Form</h6>
-          <button onclick="history.back()" style="float: right;" class="btn btn-info col-2"><i
-              class="ti-back-left align-middle me-2"></i>Kembali</button>
+          <button onclick="history.back()" style="float: right;" class="btn btn-info col-2"><i class="ti-back-left align-middle me-2"></i>Kembali</button>
           <div class="mT-30">
-            <?= form_open('U/Admin', '', [
+            <?= form_open('u/Admin/' . $admin['id_admin'], '', [
               '_method' => 'PUT'
             ]); ?>
             <div class="mb-3">
